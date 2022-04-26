@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+Hola desde la página de Suscrito <br><br>
+
+<form action="registrar_suscrito" method="post"> <!-- LA URL QUE SE ENCUENTRA ACA DEBE SER LA MISMA QUE ESTA EN EL -->
+								   				 <!-- @RequestMapping DEL CONTROLADOR (SuscritoController-->
+								  				 <!-- BIEN COMO SU METODO CORRESPONDIENTE EL "POST"-->		
+								   				 <!-- @RequestMapping(value ="/registrar_suscrito", method = RequestMethod.POST) -->
+
+<!-- ADEMAS DE ESO DEBEMOS VER QUE DATOS MAS VAMOS ENVIAR -->
+<!-- EN NUESTRO FORMULARIO, EN EL CASO DEBEMOS REVISAR LOS  -->
+<!-- ATRIBUTOS DE LA CLASE "MODEL" Y AHI SE VERIFICA QUE -->
+<!-- ENVIAMOS "ID" "NOMBRE" "CORREO" EN ESA ORDEN -->
+<!-- LUEGO EN NUESTRO FORMULARIO DEJAMOS LOS HTML CON LA MISMA ORDEN  -->
+<!-- SEGUIDOS DEL BOTON "Enviar" -->
+<!-- OBS: NO HACE FALTA PONER EL "ID" XQ ESE -->
+<!-- YA SE CONFIGURO COMO AUTO INCREMENTAL -->
+<!-- OBS_2: EL CONTENIDO DE LOS HTML "name" -->
+<!-- DEBE COINCIDIR EXATAMENTE CON LOS NOMBRES -->
+<!-- DE LOS ATRIBUTOS O VAMOS TENRR PROBLEMAS -->
+
+<label>Nombre</label>
+<input type="text" name="nombre">
+
+<label>Correo</label>
+<input type="text" name="correo">
+
+<input type="submit" value="Enviar">
+
+</form> 
+
+
+</body>
+</html>
